@@ -47,15 +47,6 @@
         quick-tap-ms = <150>;
     };
 
-    tapdance: tapdance {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAPDANCE";
-        #binding-cells = <0>;
-        bindings = <&kp LEFT_SHIFT>, <&kp SPACE>;
-
-        tapping-term-ms = <200>;
-    };
-
     behaviors {
     };
 
