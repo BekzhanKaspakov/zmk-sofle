@@ -47,6 +47,16 @@
         quick-tap-ms = <150>;
     };
 
+    tap_unless_interrupted: tap_unless_interrupted {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TAP_UNLESS_INTERRUPTED";
+        bindings = <&none>, <&none>;
+
+        #binding-cells = <2>;
+        flavor = "tap-unless-interrupted";
+        tapping-term-ms = <300>;
+    };
+
     behaviors {
     };
 
