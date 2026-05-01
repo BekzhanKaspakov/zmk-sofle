@@ -55,14 +55,14 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - LAYER1
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - LAYER2
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:backspace-reverse-outline$$
   LAYER1:
@@ -192,6 +192,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   LAYER3:
@@ -325,5 +326,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [14, 28, 40]
-  k: '&soft_off'
+- p: [30, 29]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [30, 28]
+  k: $$mdi:apple-keyboard-control$$
+- p: [30, 27]
+  k: $$mdi:apple-keyboard-option$$
+- p: [34, 35]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [34, 36]
+  k: $$mdi:apple-keyboard-control$$
+- p: [34, 37]
+  k: $$mdi:apple-keyboard-option$$
