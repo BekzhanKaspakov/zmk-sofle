@@ -35,72 +35,10 @@
         tap-ms = <100>;
     };
 
-    tap_unless_interrupted: tap_unless_interrupted {
-        compatible = "zmk,behavior-hold-tap";
-        label = "TAP_UNLESS_INTERRUPTED";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        flavor = "tap-unless-interrupted";
-        tapping-term-ms = <300>;
-    };
-
-    super_long_tap_unless: super_long_tap_unless {
-        compatible = "zmk,behavior-hold-tap";
-        label = "SUPER_LONG_TAP_UNLESS";
-        bindings = <&none>, <&none>;
-
-        #binding-cells = <2>;
-        flavor = "tap-unless-interrupted";
-        tapping-term-ms = <5000>;
-    };
-
-    retro_tap: retro_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "RETRO_TAP";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        retro-tap;
-        tapping-term-ms = <200>;
-    };
-
     behaviors {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        leftshift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <30 29>;
-        };
-
-        leftcontrol {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <30 28>;
-        };
-
-        leftalt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <30 27>;
-        };
-
-        rightshift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <34 35>;
-        };
-
-        rightcontrol {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <34 36>;
-        };
-
-        rigthalt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <34 37>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
